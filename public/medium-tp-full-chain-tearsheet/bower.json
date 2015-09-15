@@ -1,0 +1,21 @@
+{
+  "name": "tearsheet",
+  "version": "0.0.0",
+  "authors": [
+    "ETRADE Prototype Crew"
+  ],
+  "description": "a ui tearsheet",
+  "dependencies":{
+    "etrade-bootstrap": "git@bitbucket.org:etradecreative/etrade-bootstrap.git#feature/template-dark-page-with-card"
+  },
+  "main": "dist/index.html",
+  "license": "You can't use this",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

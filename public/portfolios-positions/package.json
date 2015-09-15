@@ -1,0 +1,15 @@
+{
+  "name": "tearsheet-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.html",
+  "scripts": {
+    "prestart" : "bower install -p",
+    "start" : "harp server src --port 8080 & browser-sync start --proxy 'localhost:8080' --port 8081 --files 'src/**/*.ejs, src/**/*.scss'",
+    "poststart" : "cp -r bower_components/etrade-bootstrap/src/fonts/ src/fonts",
+    "build": "harp compile src dist",
+    "postbuild" : "find dist -path '*/.*' -prune -o -type f -print | zip download.zip -@"
+  },
+  "author": "ETRADE Prototype Crew",
+  "license": "You may not use this."
+}

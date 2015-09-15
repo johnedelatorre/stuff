@@ -1,0 +1,63 @@
+@font-face {
+  font-family: Fort;
+  src: url(../fonts/ETradeFort-Medium.otf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Fort;
+  src: url(../fonts/ETradeFort-Book.otf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Fort;
+  src: url(../fonts/ETradeFort-Light.otf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: Fort;
+  src: url(../fonts/ETradeFort-Bold.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Fort;
+  src: url(../fonts/ETradeFort-Black.otf);
+  font-weight: 900;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Fort', arial, sans-serif;
+  font-weight: normal;
+  margin: 0;
+  padding-top: 50px;
+  background-color: #19223c;
+  color: white;
+}
+
+h1{
+  color: #BBE60F;
+}
+
+a{
+  color: #1991DB;
+}
+
+a:hover{
+  color: white;
+}
+
+h1{
+  font-weight: bold;
+}
+
+main{
+  margin: 0 auto;
+  width: 70%;
+}

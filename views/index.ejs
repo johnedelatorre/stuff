@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <!--<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">-->
+    <!--<link href="css/main.css" media="all" rel="stylesheet" type="text/css">-->
+    <link href="bower_components/etrade-bootstrap/dist/css/etrade-bootstrap.min.css" media="all" rel="stylesheet" type="text/css">
+
+    <style>
+      body > .container{
+        min-height: 100vh;
+      }
+    </style>
+
+  </head>
+  <body>
+    <main class='container'>
+
+      <div class="col-xs-12 col-md-6 vertical-push-3">
+        <h1 class="page-title">UI Tearsheets</h1>
+      </div>
+
+      <div class='row'>
+        <div class='col-xs-12 col-md-8'>
+          <table class='table'>
+            <thead>
+              <tr>
+                <th>Tearsheet</th>
+                <th>Download (.zip)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <%
+                var len = tearsheets.length;
+                for(var ii = 0; ii < len; ii++){
+                  var cur = tearsheets[ii];
+                  var url = cur + '/dist';
+                  var download = cur + '/download.zip';
+              %>
+              <tr>
+                <td><a href='<%= url %>'><%= cur %></a></td>
+                <td><a class='btn btn-xs btn-default' href='<%= download %>'>Download</a></td>
+              </tr>
+              <%
+                }
+              %>
+            </tbody>
+          </table>
+        </div>
+        <div class='col-xs-12 col-md-4'>
+          <aside class="panel panel-default"> 
+            
+              <header class="panel-heading">
+                <h2 class="panel-title">About</h2>
+              </header>
+              <div class="panel-body">
+                <div class='col-xs-12'>
+                  <p>
+                    These UI Tearsheets are logic-less html &amp; css views from various projects.
+                  </p>
+                  <p class='vertical-push-3'>
+                    <strong>Built with the ETRADE Design Language</strong><br/>
+                    Our Design Language provides common components, ui patterns and page templates to help you build applications for ETRADE's web platform.
+                  </p>
+                  <a class='btn btn-default btn-xs' href='http://styleguide.etradecreative.com'>View the Design Language Docs</a>
+                </div>
+              </div>
+              <footer class="panel-footer">
+                <ul class="list-horizontal" style='display:none;'>
+                  <li>
+                    <a href="#">Footer Link 01</a>
+                  </li>
+                  <li></li>
+                  <li>
+                    <a href="#">Footer Link 02</a>
+                  </li>
+                </ul>
+              </footer>
+            
+          </aside>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

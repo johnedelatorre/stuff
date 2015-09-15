@@ -1,0 +1,34 @@
+@import '../bower_components/etrade-bootstrap/dist/variables';
+
+/********** bootstrap overrides **********/
+
+header {
+    margin: 0 auto;
+    padding: 0;
+    min-height: 120px;
+    height: 120px;
+    background: url('../img/header-background.png') 0 0 repeat-x;
+    text-align: center;
+}
+
+.container-wrapper {
+    width: 100%;
+    background: $brand-blue;
+    padding-left: 33px;
+}
+
+.width-fix {
+	width: 966px;
+	background: $brand-blue;
+}
+
+.main-content {
+	padding-top: 30px;
+}
+.main-content h1, .main-content h2, .main-content h3 {
+	color: white;
+}
+
+.main-content h4 {
+	color: lighten($brand-purple, 34);
+}
